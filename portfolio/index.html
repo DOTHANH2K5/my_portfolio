@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh — Frontend Developer & UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a class="header__logo" href="#">&lt;Thanh /&gt;</a>
+        <nav class="header__nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero__inner">
+            <span class="hero__label">Frontend Developer &amp; UI/UX Designer</span>
+            <h1 class="hero__title">
+                Building interfaces<br>
+                <em>people love to use.</em>
+            </h1>
+            <p class="hero__sub">
+                専門学校でフロントエンド開発とUI/UXデザインを学んでいます。<br>
+                日本のテック企業での就職を目指し、実践的なプロジェクトに取り組んでいます。
+            </p>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary">View Projects</a>
+                <a href="#contact" class="btn btn--ghost">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero__bracket" aria-hidden="true">
+            <span class="bracket bracket--open">&lt;</span>
+            <span class="bracket__word">dev</span>
+            <span class="bracket--slash">/</span>
+            <span class="bracket bracket--close">&gt;</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__eyebrow">About — 自己紹介</span>
+                <h2 class="section__title">Who I Am</h2>
+            </div>
+            <div class="about__grid">
+                <div class="about__avatar-wrap">
+                    <div class="about__avatar-placeholder">T</div>
+                </div>
+                <div class="about__text">
+                    <p>
+                        ベトナム出身、日本の専門学校でフロントエンド開発とUI/UXデザインを専攻しています。
+                        HTMLやCSS、JavaScriptを使ったウェブ制作を学びながら、デザインと実装の両面から
+                        ユーザー体験を追求しています。
+                    </p>
+                    <p>
+                        日本のテック企業でのフロントエンドエンジニアまたはUIデザイナーとしての就職を目標に、
+                        実務に直結するスキルを積極的に習得しています。
+                    </p>
+                    <div class="about__meta">
+                        <div class="about__meta-item">
+                            <span class="about__meta-label">Location</span>
+                            <span>Japan</span>
+                        </div>
+                        <div class="about__meta-item">
+                            <span class="about__meta-label">Status</span>
+                            <span class="status-badge">就職活動中 · Open to Work</span>
+                        </div>
+                        <div class="about__meta-item">
+                            <span class="about__meta-label">GitHub</span>
+                            <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourname</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__eyebrow">Projects — 制作物</span>
+                <h2 class="section__title">Selected Work</h2>
+            </div>
+            <div class="projects__grid">
+
+                <article class="project-card">
+                    <div class="project-card__img project-card__img--anime">
+                        <span class="project-card__tag">E-Commerce</span>
+                    </div>
+                    <div class="project-card__body">
+                        <h3>AnimeSky Shop</h3>
+                        <p>アニメグッズのECサイト。商品一覧・カテゴリ表示・カート機能UIを実装。BEMクラス設計を採用。</p>
+                        <div class="project-card__stack">
+                            <span>HTML</span><span>CSS</span><span>BEM</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="btn btn--sm">Demo</a>
+                            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn--sm btn--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__img project-card__img--portfolio">
+                        <span class="project-card__tag">Portfolio</span>
+                    </div>
+                    <div class="project-card__body">
+                        <h3>Portfolio Site</h3>
+                        <p>自己紹介・スキル・制作物を掲載したポートフォリオサイト。レスポンシブ対応・日英バイリンガル。</p>
+                        <div class="project-card__stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="btn btn--sm">Demo</a>
+                            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn--sm btn--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Placeholder for next project -->
+                <article class="project-card project-card--coming">
+                    <div class="project-card__img project-card__img--empty">
+                        <span class="project-card__tag">Coming Soon</span>
+                    </div>
+                    <div class="project-card__body">
+                        <h3>Next Project</h3>
+                        <p>現在制作中のプロジェクトです。JavaScriptを活用したインタラクティブなUIを予定しています。</p>
+                        <div class="project-card__stack">
+                            <span>JavaScript</span><span>API</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__eyebrow">Skills — スキル</span>
+                <h2 class="section__title">Technical Skills</h2>
+            </div>
+            <div class="skills__groups">
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Frontend</h3>
+                    <div class="skills__list">
+                        <div class="skill-chip skill-chip--strong">HTML5</div>
+                        <div class="skill-chip skill-chip--strong">CSS3</div>
+                        <div class="skill-chip skill-chip--strong">JavaScript (ES6+)</div>
+                        <div class="skill-chip">BEM</div>
+                        <div class="skill-chip">Responsive Design</div>
+                        <div class="skill-chip">Flexbox / Grid</div>
+                    </div>
+                </div>
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Design</h3>
+                    <div class="skills__list">
+                        <div class="skill-chip skill-chip--strong">UI/UX Design</div>
+                        <div class="skill-chip">Figma</div>
+                        <div class="skill-chip">Wireframing</div>
+                        <div class="skill-chip">Design Trends</div>
+                    </div>
+                </div>
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Tools</h3>
+                    <div class="skills__list">
+                        <div class="skill-chip skill-chip--strong">VS Code</div>
+                        <div class="skill-chip">Git / GitHub</div>
+                        <div class="skill-chip">Chrome DevTools</div>
+                    </div>
+                </div>
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Languages</h3>
+                    <div class="skills__list">
+                        <div class="skill-chip">Vietnamese (Native)</div>
+                        <div class="skill-chip">Japanese (学習中)</div>
+                        <div class="skill-chip">English (Business)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__eyebrow">Contact — お問い合わせ</span>
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__desc">就職・インターン・制作についてのご連絡はこちらまで。</p>
+            </div>
+            <form class="contact__form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name <span class="form-required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="form-required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message <span class="form-required">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="お気軽にご連絡ください。" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="header__logo">&lt;Thanh /&gt;</span>
+            <p>© 2026 Thanh. Crafted with HTML, CSS &amp; JS.</p>
+            <div class="footer__links">
+                <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
