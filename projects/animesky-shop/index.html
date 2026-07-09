@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Sky Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -12,33 +13,101 @@
         <a class="header__logo">AnimeSky</a>
 
         <nav class="header__nav">
-            <div class="header__nav-item">
-                <a href="#">Home</a>
+            <div class="header__nav-item-link hover-underline">
+                <a href="#">
+                    <span class="span">Home</span>
+                </a>
             </div>
             
             <div class="header__nav-item">
-                <a href="#">Products</a>
+                <a href="#" class="header__nav-item-link hover-underline">
+                    <span class="span">Products</span>
+                </a>
             </div>
             
             <div class="header__nav-item">
-                <a href="#">Categories</a>
+                <a href="#" class="header__nav-item-link hover-underline">
+                    <span class="span">Categories</span>
+                </a>
             </div>
            
             <div class="header__nav-item">
-                <a href="#">Contact</a>
+                <a href="#" class="header__nav-item-link hover-underline">
+                    <span class="span">Contact</span>
+                </a>
             </div>
            
+            <a href="#" class="header__nav-item header__nav-item-cart">
+                <span class="cart cart-1"><i class="fa-solid fa-cart-shopping"></i></span>
+
+
+                <span class="cart cart-2" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></span>
+            </a>
         </nav>
+
+        
     </header>
 
-    <section class="hero">
-        <h1>Anime Accessories Store</h1>
-        <p>
-            Discover cute anime keychains,
-            figures and posters.
-        </p>
+    <section class="hero" id="home">
+        <ul class="hero-slider">
+            <li class="slider-item active">
+                <div class="slider-bg">
+                    <img src="/projects/animesky-shop/assets/images/hero-silder-1.jpg" width="1920" height="1280" alt="" class="img-cover">
+                </div>
+                <h1 class="hero-title slider-reveal">Anime<br>Accessories Store</h1>
+                <p class="section-subtitle slider-reveal">
+                    Discover cute anime keychains,
+                    figures and posters.
+                </p>
+                <p class="hero-text slider-reveal">
+                    Explore our latest collection of anime accessories and merch.
+                </p>
+                <a href="#" class="btn btn-primary slider-reveal">
+                    <span class="text text-1">Shop Now </span>
 
-        <button>Shop Now</button>
+                    <span class="text text-2" aria-hidden="true">Shop Now </span>
+                </a>
+            </li>
+
+            <li class="slider-item">
+                <div class="slider-bg">
+                    <img src="/projects/animesky-shop/assets/images/hero-slider-2(fixed).JPG" width="1920" height="1280" alt="" class="img-cover">
+                </div>
+                <h1 class="hero-title slider-reveal">Anime<br>Accessories Store</h1>
+                <p class="section-subtitle slider-reveal">
+                    Discover cute anime keychains,
+                    figures and posters.
+                </p>
+                <p class="hero-text slider-reveal">
+                    Explore our latest collection of anime accessories and merch.
+                </p>
+               <a href="#" class="btn btn-primary slider-reveal">
+                    <span class="text text-1">Shop Now </span>
+
+                    <span class="text text-2" aria-hidden="true">Shop Now</span>
+                </a>
+            </li>
+
+            <li class="slider-item">
+                <div class="slider-bg">
+                    <img src="/projects/animesky-shop/assets/images/hero-slider-03(fixed).JPG" width="1920" height="1280" alt="" class="img-cover">
+                </div>
+                <h1 class="hero-title slider-reveal">Anime<br>Accessories Store</h1>
+                <p class="section-subtitle slider-reveal">
+                    Discover cute anime keychains,
+                    figures and posters.
+                </p>
+                <p class="hero-text slider-reveal">
+                    Explore our latest collection of anime accessories and merch.
+                </p>
+                <a href="#" class="btn btn-primary slider-reveal">
+                    <span class="text text-1">Shop Now</span>
+
+                    <span class="text text-2" aria-hidden="true">Shop Now</span>
+                </a>
+            </li>
+        </ul>
+        
     </section>
 
     <main>
@@ -53,18 +122,18 @@
                     <img class="product-card_img" src="https://via.placeholder.com/200" alt="">
                     <h3>Anime Keychain</h3>
                     <p>¥1,200</p>
-                    <!-- Buy/Add button -->
+                    
                     <div class="product-card__buttons">
                         <button class="product-card__cart-buy">Buy Now</button>
                         <button class="product-card__add-to-cart">Add to Cart</button>
                     </div>
                 </div>
 
-                <div  class="product-card">
+                <div  class="product-card"> 
                     <img class="product-card_img" src="https://via.placeholder.com/200" alt="">
                     <h3>Mini Figure</h3>
                     <p>¥3,500</p>
-                    <!-- Buy/Add button -->
+                    
                     <div class="product-card__buttons">
                         <button class="product-card__cart-buy">Buy Now</button>
                         <button class="product-card__add-to-cart">Add to Cart</button>
@@ -75,7 +144,7 @@
                     <img class="product-card_img" src="https://via.placeholder.com/200" alt="">
                     <h3>Anime Poster</h3>
                     <p>¥800</p>
-                    <!-- Buy/Add button -->
+                    
                     <div class="product-card__buttons">
                         <button class="product-card__cart-buy">Buy Now</button>
                         <button class="product-card__add-to-cart">Add to Cart</button>
@@ -86,7 +155,7 @@
 
         </section>
 
-        <section class="categories">
+        <!-- <section class="categories">
 
             <h2>Categories</h2>
 
@@ -99,13 +168,14 @@
 
             </div>
 
-        </section>
+        </section> -->
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>© 2026 AnimeSky Shop</p>
-    </footer>
+    </footer> -->
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
