@@ -26,7 +26,7 @@
             </div>
             
             <div class="header__nav-item">
-                <a href="#" class="header__nav-item-link hover-underline">
+                <a href="#cate" class="header__nav-item-link hover-underline">
                     <span class="span">Categories</span>
                 </a>
             </div>
@@ -62,7 +62,7 @@
                 <p class="hero-text slider-reveal">
                     Explore our latest collection of anime accessories and merch.
                 </p>
-                <a href="#" class="btn btn-primary slider-reveal">
+                <a href="#feature-product" class="btn btn-primary slider-reveal">
                     <span class="text text-1">Shop Now </span>
 
                     <span class="text text-2" aria-hidden="true">Shop Now </span>
@@ -81,7 +81,7 @@
                 <p class="hero-text slider-reveal">
                     Explore our latest collection of anime accessories and merch.
                 </p>
-               <a href="#" class="btn btn-primary slider-reveal">
+               <a href="#feature-product" class="btn btn-primary slider-reveal">
                     <span class="text text-1">Shop Now </span>
 
                     <span class="text text-2" aria-hidden="true">Shop Now</span>
@@ -100,7 +100,7 @@
                 <p class="hero-text slider-reveal">
                     Explore our latest collection of anime accessories and merch.
                 </p>
-                <a href="#" class="btn btn-primary slider-reveal">
+                <a href="#feature-product" class="btn btn-primary slider-reveal">
                     <span class="text text-1">Shop Now</span>
 
                     <span class="text text-2" aria-hidden="true">Shop Now</span>
@@ -110,16 +110,26 @@
         
     </section>
 
+
+
+
+
     <main>
 
+        <!-- 
+            -PRODUCTS    
+        -->
+
+        <section class="flash-sale">
+
+        </section>
         <section class="products">
 
-            <h2>Featured Products</h2>
+            <h2 id="feature-product">Featured Products</h2>
 
             <div class="product-grid">
-
                 <a href="#" class="product-card">
-                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-1.jpg" alt="">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-1.jpg" alt="" width="200" height="200">
                     <h3>Anime Keychain</h3>
                     <p>¥1,200</p>
                     
@@ -130,7 +140,7 @@
                 </a>
 
                 <a href="#" class="product-card"> 
-                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-4.jpg" alt="">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-4.jpg" alt="" width="200" height="200">
                     <h3>Mini Figure</h3>
                     <p>¥3,500</p>
                     
@@ -141,7 +151,7 @@
                 </a>
 
                 <a href="#" class="product-card">
-                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-5.jpg" alt="">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-5.jpg" alt="" width="200" height="200">
                     <h3>Anime Posters</h3>
                     <p>¥800</p>
                     
@@ -151,30 +161,140 @@
                     </div>
                 </a>
 
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-5.jpg" alt="" width="200" height="200">
+                    <h3>Anime Posters</h3>
+                    <p>¥800</p>
+                    
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-5.jpg" alt="" width="200" height="200">
+                    <h3>Anime Posters</h3>
+                    <p>¥800</p>
+                    
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+                
             </div>
 
         </section>
 
-        <!-- <section class="categories">
+        
+        <section class="all-products" id="cate">
+            <div class="all-products__header">
+                <div class="all-products__title-wrap">
+                    <p class="section-subtitle">Curated picks</p>
+                    <h2>All Products</h2>
+                </div>
 
-            <h2>Categories</h2>
+                <div class="all-products__controls">
+                    <ul class="all-products__filter-list">
+                        <li class="all-products__filter-item">
+                            <a href="#" class="category active">All</a>
+                        </li>
+                        <li class="all-products__filter-item">
+                            <a href="#" class="category">Keychains</a>
+                        </li>
+                        <li class="all-products__filter-item">
+                            <a href="#" class="category">Figures</a>
+                        </li>
+                        <li class="all-products__filter-item">
+                            <a href="#" class="category">Posters</a>
+                        </li>
+                        <li class="all-products__filter-item">
+                            <a href="#" class="category">Stickers</a>
+                        </li>
+                    </ul>
 
-            <div class="category-list">
-
-                <div class="category">Keychains</div>
-                <div class="category">Figures</div>
-                <div class="category">Posters</div>
-                <div class="category">Stickers</div>
-
+                    <label class="all-products__search-wrap" aria-label="Search products">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="all-products__search" placeholder="Search products">
+                    </label>
+                </div>
             </div>
 
-        </section> -->
+            <div class="all-products__item">
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-4.jpg" alt="Mini Figure" width="200" height="200">
+                    <h3>Mini Figure</h3>
+                    <p>¥3,500</p>
+
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-1.jpg" alt="Anime Keychain" width="200" height="200">
+                    <h3>Anime Keychain</h3>
+                    <p>¥1,200</p>
+
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-5.jpg" alt="Anime Posters" width="200" height="200">
+                    <h3>Anime Posters</h3>
+                    <p>¥800</p>
+
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-4.jpg" alt="Cute Figure" width="200" height="200">
+                    <h3>Cute Figure</h3>
+                    <p>¥2,900</p>
+
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-1.jpg" alt="Hero Keychain" width="200" height="200">
+                    <h3>Hero Keychain</h3>
+                    <p>¥950</p>
+
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img class="product-card_img" src="/projects/animesky-shop/assets/images/product-5.jpg" alt="Limited Poster" width="200" height="200">
+                    <h3>Limited Poster</h3>
+                    <p>¥1,300</p>
+
+                    <div class="product-card__buttons">
+                        <button class="product-card__cart-buy">Buy Now</button>
+                        <button class="product-card__add-to-cart">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+        </section>
 
     </main>
 
-    <!-- <footer>
+    <footer>
         <p>© 2026 AnimeSky Shop</p>
-    </footer> -->
+    </footer>
 
  
   <!-- 
